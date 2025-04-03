@@ -165,7 +165,7 @@
         .tel-text,
         .internet-text,
         .map-text {
-          width: 200px;
+          width: 220px;
           font-size: 13px;
           color: #ffffff;
           text-align: justify;
@@ -198,7 +198,7 @@
         }
 
         & .map-text {
-          width: 200px;
+          width: 220px;
           font-size: 13px;
           color: #ffffff;
           text-align: justify;
