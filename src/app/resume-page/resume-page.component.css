@@ -488,6 +488,86 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .resume-body {
+    flex-direction: column; /* เรียงจากบนลงล่าง */
+    padding: 10px;
+  }
+  .resume-left {
+    flex: 100%;
+    padding: 10px;
+  }
+
+  .left-row-image {
+    flex-direction: column;
+    align-items: center;
+
+    & .left-title {
+      margin-left: 0;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .left-row-contact .email-title {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    & .email-text,
+    .tel-text,
+    .internet-text,
+    .map-text {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .left-row-contact .map-title {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    & .map-text {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .left-row-languages .progress {
+    width: 100%;
+  }
+
+  .left-row-languages .languages-sub-title {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    & .text {
+      width: 100%;
+    }
+  }
+
+  .left-row-hobbies .hobbies-detail {
+    justify-content: center;
+  }
+
+  .left-row-skills .box-skills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-row-skills .box-skills .box-text {
+    margin-bottom: 10px;
+  }
+
+  .left-row-hobbies .code-box,
+  .gym-box,
+  .movie-box,
+  .trip-box {
+    min-width: 20vw;
+  }
+}
 
 .resume-right {
   flex: 50%;
@@ -744,6 +824,90 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .resume-right {
+    flex: 100%;
+    padding: 10px;
+  }
+
+  .resume-right-main {
+    padding: 8px;
+    align-items: stretch;
+  }
+
+  .right-row-education,
+  .right-row-work,
+  .right-row-skills {
+    margin-top: 8px;
+  }
+
+  .right-title {
+    padding: 4px;
+  }
+
+  .title-box .title {
+    font-size: 14px;
+  }
+
+  .right-title .title-1 {
+    font-size: 14px;
+  }
+
+  .right-title .title-2 {
+    font-size: 12px;
+  }
+
+  .right-title .title-3 .year-start,
+  .right-title .title-3 .year-end {
+    font-size: 10px;
+  }
+
+  .right-title .title-4 ul > li {
+    font-size: 12px;
+  }
+
+  .right-title .box-skills {
+    justify-content: center;
+  }
+
+  .right-title .box-skills .box-text {
+    margin: 6px;
+    min-width: 30%;
+  }
+
+  .skills-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .right-title .box-skills .box-text {
+    min-width: 40%;
+  }
+
+  .resume-right-main {
+    padding: 6px;
+  }
+
+  .right-title .title-1 {
+    font-size: 13px;
+  }
+
+  .right-title .title-2,
+  .right-title .title-3 .year-start,
+  .right-title .title-3 .year-end {
+    font-size: 11px;
+  }
+
+  .right-title .title-4 ul > li {
+    font-size: 11px;
+  }
+
+  .skills-text {
+    font-size: 11px;
+  }
+}
+
 @keyframes progress {
   0% {
     --percentage: 0;
