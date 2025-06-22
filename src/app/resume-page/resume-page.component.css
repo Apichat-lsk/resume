@@ -992,10 +992,24 @@
 [role="react"]::after {
   counter-reset: percentage var(--value);
   /* content: counter(percentage) "%"; */
-  content: url(../../assets/images/nextjs.png);
+  content: url(../../assets/images/react-logo.png);
   font-family: Helvetica, Arial, sans-serif;
   font-size: calc(var(--size) / 5);
   color: var(--primary);
+}
+[role="next"] {
+  --percentage: var(--value);
+  --primary: #08c2ff;
+  --secondary: #adf;
+  --size: 55px;
+  animation: progress 2s 0.5s forwards;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
 }
 [role="next"]::before {
   content: "";
@@ -1016,11 +1030,12 @@
 [role="next"]::after {
   counter-reset: percentage var(--value);
   /* content: counter(percentage) "%"; */
-  content: url(../../assets/images/react-logo.png);
+  content: url(../../assets/images/nextjs-logo.png);
   font-family: Helvetica, Arial, sans-serif;
   font-size: calc(var(--size) / 5);
   color: var(--primary);
 }
+
 [role="html5"] {
   --percentage: var(--value);
   --primary: #08c2ff;
