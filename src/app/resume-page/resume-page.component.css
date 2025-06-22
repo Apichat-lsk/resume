@@ -992,6 +992,30 @@
 [role="react"]::after {
   counter-reset: percentage var(--value);
   /* content: counter(percentage) "%"; */
+  content: url(../../assets/images/nextjs.png);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--primary);
+}
+[role="next"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(
+    var(--primary) calc(var(--percentage) * 1%),
+    var(--secondary) 0
+  );
+  mask: radial-gradient(white 55%, transparent 0);
+  mask-mode: alpha;
+  -webkit-mask: radial-gradient(#0000 60%, #000 0);
+  -webkit-mask-mode: alpha;
+}
+[role="next"]::after {
+  counter-reset: percentage var(--value);
+  /* content: counter(percentage) "%"; */
   content: url(../../assets/images/react-logo.png);
   font-family: Helvetica, Arial, sans-serif;
   font-size: calc(var(--size) / 5);
