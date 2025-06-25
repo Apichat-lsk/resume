@@ -165,7 +165,7 @@
         .tel-text,
         .internet-text,
         .map-text {
-          width: 220px;
+          width: 240px;
           font-size: 13px;
           color: #ffffff;
           text-align: justify;
@@ -198,7 +198,7 @@
         }
 
         & .map-text {
-          width: 220px;
+          width: 240px;
           font-size: 13px;
           color: #ffffff;
           text-align: justify;
@@ -1643,4 +1643,7 @@
   font-family: Helvetica, Arial, sans-serif;
   font-size: calc(var(--size) / 5);
   color: var(--primary);
+}
+.portfolio {
+  white-space: nowrap;
 }
