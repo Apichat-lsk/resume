@@ -327,7 +327,7 @@
     & .hobbies-detail {
       display: flex;
       flex-direction: row;
-      justify-content: start;
+      justify-content: center;
       flex-wrap: wrap;
       padding: 10px;
       width: 100%;
@@ -337,15 +337,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-width: 4vw;
-        margin: 5px;
+        min-width: 2vw;
+        margin: 2px;
 
         & .code {
           background-image: url(../../assets/images/coding.png);
           background-size: cover;
           background-repeat: no-repeat;
-          width: 38px;
-          height: 38px;
+          width: 30px;
+          height: 30px;
         }
         & .code-text {
           color: #ffffff;
@@ -363,8 +363,8 @@
           background-image: url(../../assets/images/dumbbell.png);
           background-size: cover;
           background-repeat: no-repeat;
-          width: 38px;
-          height: 38px;
+          width: 30px;
+          height: 30px;
         }
         & .gym-text {
           color: #ffffff;
@@ -382,8 +382,8 @@
           background-image: url(../../assets/images/cinema.png);
           background-size: cover;
           background-repeat: no-repeat;
-          width: 38px;
-          height: 38px;
+          width: 30px;
+          height: 30px;
         }
         & .movie-text {
           color: #ffffff;
@@ -401,8 +401,8 @@
           background-image: url(../../assets/images/road-trip.png);
           background-size: cover;
           background-repeat: no-repeat;
-          width: 38px;
-          height: 38px;
+          width: 30px;
+          height: 30px;
         }
         & .trip-text {
           color: #ffffff;
@@ -1031,6 +1031,44 @@
   counter-reset: percentage var(--value);
   /* content: counter(percentage) "%"; */
   content: url(../../assets/images/nextjs-logo.png);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--primary);
+}
+[role="vue"] {
+  --percentage: var(--value);
+  --primary: #08c2ff;
+  --secondary: #adf;
+  --size: 55px;
+  animation: progress 2s 0.5s forwards;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+[role="vue"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(
+    var(--primary) calc(var(--percentage) * 1%),
+    var(--secondary) 0
+  );
+  mask: radial-gradient(white 55%, transparent 0);
+  mask-mode: alpha;
+  -webkit-mask: radial-gradient(#0000 60%, #000 0);
+  -webkit-mask-mode: alpha;
+}
+[role="vue"]::after {
+  counter-reset: percentage var(--value);
+  /* content: counter(percentage) "%"; */
+  content: url(../../assets/images/vuejs-logo.png);
   font-family: Helvetica, Arial, sans-serif;
   font-size: calc(var(--size) / 5);
   color: var(--primary);
